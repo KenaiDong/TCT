@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" stylesheets="/sample/TCTcss.css" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="27.0" prefWidth="211.0">
+         <children>
+             <Button layoutX="67.0" layoutY="40.0" onAction="#picDownload" prefHeight="23.0" prefWidth="64.0" text="图片下载" />
+            <TextField fx:id="url" layoutX="20.0" layoutY="14.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="tips" alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="15.0" prefWidth="197.0" wrapText="true" GridPane.rowIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="-1.0" />
+         </opaqueInsets></Label>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints fillWidth="false" maxWidth="198.0" minWidth="198.0" prefWidth="198.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>
